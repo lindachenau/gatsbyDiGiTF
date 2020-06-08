@@ -4,7 +4,7 @@ import { MDBRow, MDBCol, MDBIcon, MDBContainer } from "mdbreact";
 const Features = () => {
     return (
         <MDBContainer tag="section" className="text-center my-5">
-            <h2 className="h1-responsive font-weight-bold my-5" id="featuresDiGiTF">
+            <h2 className="h1-responsive font-weight-bold my-5" id="why-us">
                 Why choose DiGi Transform for Web App Development?
             </h2>
             <p className="lead w-responsive mx-auto mb-5">

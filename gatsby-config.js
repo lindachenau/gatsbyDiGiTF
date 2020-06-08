@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'MDB React Starter',
-    description: 'MDB React starter for material design landing page',
+    title: 'DiGi Transform website',
+    description: 'Transform your ideas into powerful, enterprise-grade applications, fully customised for your business',
     siteUrl: 'https://digitransform.com.au',
     author: 'Linda Chen',
   },

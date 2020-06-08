@@ -37,6 +37,8 @@ class NavbarPage extends Component {
               <MDBNavItem>
                 <CustomNavLink to="/about">About</CustomNavLink>
               </MDBNavItem>
+            </MDBNavbarNav>  
+            <MDBNavbarNav left>
               <MDBNavItem>
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>

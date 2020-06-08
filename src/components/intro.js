@@ -11,7 +11,7 @@ const Intro = ({ children }) => {
                     <h4 className="subtext-header h4-responsive mt-2 mb-4">
                         Transform your ideas into powerful, enterprise-grade applications, fully customised for your business.
                     </h4>
-                    <MDBBtn color="info" href="#featuresDiGiTF"><MDBIcon icon="home" className="mr-2" /> Visit us</MDBBtn>
+                    <MDBBtn color="info" href="#why-us"><MDBIcon icon="home" className="mr-2" /> Visit us</MDBBtn>
                 </MDBCol>
             </MDBRow>
         </MDBContainer>

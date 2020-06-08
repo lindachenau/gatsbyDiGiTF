@@ -4,8 +4,8 @@ import { navigate } from "gatsby"
 
 const Card = ({image, title, description, link}) => {
     return (
-        <MDBCol style={{ maxWidth: "22rem" }}>
-            <MDBCard>
+        <MDBCol style={{ maxWidth: "22rem", minWidth: "300px" }}>
+            <MDBCard style={{ marginBottom: "20px" }}>
             <MDBCardImage className="img-fluid" src={image} alt=""  waves />
                 <MDBCardBody>
                     <MDBCardTitle>{title}</MDBCardTitle>
