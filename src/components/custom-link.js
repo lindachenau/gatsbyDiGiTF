@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import classNames from "classnames";
-import { MDBWaves } from 'mdbreact';
-import { navigate } from "gatsby";
+import React, { Component } from "react"
+import classNames from "classnames"
+import { MDBWaves } from 'mdbreact'
+import { navigate } from "gatsby"
 
 class customLink extends Component {
 

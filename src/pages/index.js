@@ -7,7 +7,6 @@ import Features from '../components/features'
 import Card from '../components/card'
 import { MDBRow } from 'mdbreact'
 
-
 const imgList = [
   {
     name: require("../images/wireframe.jpeg"),

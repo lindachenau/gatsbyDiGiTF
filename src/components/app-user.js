@@ -20,8 +20,7 @@ export const isLoggedIn = () => {
 
 export const getCurrentUser = () => isBrowser && getUser()
 
-export const logout = callback => {
+export const logout = () => {
   if (!isBrowser) return
   setUser({})
-  callback()
 }

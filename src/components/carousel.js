@@ -6,7 +6,7 @@ const CarouselPage = ({imgList}) => {
         <MDBCarousel activeItem={1} length={3} className="z-depth-1 w-100">
             <MDBCarouselInner>
                 {imgList.map( image => 
-                    <MDBCarouselItem itemId={image.key}>
+                    <MDBCarouselItem itemId={image.key} key={image.key}>
                         <MDBView>
                             <img className="d-block w-100" src={image.name} alt={image.alt} />
                             <MDBMask overlay="black-strong" />
