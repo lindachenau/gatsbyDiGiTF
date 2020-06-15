@@ -40,7 +40,7 @@ class customLink extends Component {
         );
 
         return (
-            <li
+            <a
                 className={classes}
                 onMouseUp={this.handleClick}
                 onTouchStart={this.handleClick}
@@ -51,7 +51,7 @@ class customLink extends Component {
                   {children}
                 </span>
                 {!disabled && <MDBWaves cursorPos={cursorPos} />}
-            </li>
+            </a>
         );
     }
 }

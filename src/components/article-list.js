@@ -31,7 +31,7 @@ export default () => (
       render = { data => (
          <div>
             {data.allMarkdownRemark.edges.map(({ node }) => (
-               <Article id={node.id}
+               <Article key={node.id}
                   to={node.fields.slug}
                   keywords={node.frontmatter.keywords}
                   title={node.frontmatter.title}

@@ -65,6 +65,8 @@ const tunnel = 'https://drive.google.com/uc?export=view&id=13lsbWNcR5Wyb_oqMQnTq
 const unreal = 'https://drive.google.com/uc?export=view&id=1hdFMEGzs9hQ_RcNiD_eYGBf7iYvK5HvM'
 const violinist2 = 'https://drive.google.com/uc?export=view&id=1OhZT_9Lq8BaUqHF-5MfQH7hMMQ5KyAyy'
 const wolf = 'https://drive.google.com/uc?export=view&id=1L0TpFl2MFcv4V556yvKFzsKvqBnQvSF7'
+const boyLaughing = 'https://drive.google.com/uc?export=view&id=1gP1qWlbzMiJqhTKd2M_ywCRHxqO2fB09'
+const mumDadClimbing = 'https://drive.google.com/uc?export=view&id=1Rh4IITitBF_bTicSKne2dKnljd_BpKIc'
 
 
 const images = [
@@ -80,8 +82,8 @@ const images = [
   gavinWaiting, shadow, roses, dancerRed,
   musing2, sketch, temple2, gavinButterfly,
   beach, gavinFight, palaceTea, rothenburg2,
-  musing, tunnel, monkeys, temple2,
-  dancing, teaCup, monkeys, palaceLivingRoom,
+  musing, tunnel, monkeys, mumDadClimbing,
+  dancing, teaCup, boyLaughing, palaceLivingRoom,
   countrySite, girlHorse, swans, temple,
   catwalk, violinist2, unreal, wolf
 ]
