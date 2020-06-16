@@ -6,6 +6,9 @@ public/
 .cache/
 *.tgz
 .env.*
+.graphqlconfig.yml
+src/graphql/
+
 
 #amplify
 amplify/

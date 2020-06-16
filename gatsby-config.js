@@ -41,6 +41,14 @@ module.exports = {
           excerpt_separator: `<!-- end -->`
       }
     },
+
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-QGNK2YRZ19",
+      },
+    },
+  
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

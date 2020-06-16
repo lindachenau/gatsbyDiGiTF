@@ -6,6 +6,8 @@ import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
+import IconButton from '@material-ui/core/IconButton'
+import CloseIcon from '@material-ui/icons/Close'
 
 const logo = require('../images/DiGiTF_logo_Transparency.png')
 
@@ -30,6 +32,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
       maxHeight: 100,
     }
+  },
+  close: {
+    justifyContent: "flex-end"
   }
 }))
 
@@ -85,6 +90,9 @@ export default function ContactForm({theme, triggerOpen, initOpen}) {
   return (
     <>
       <Dialog open={open} onBackdropClick={() => setOpen(false)}>
+        <IconButton edge="start" color="inherit" className={classes.close} onClick={() => setOpen(false)} aria-label="close">
+          <CloseIcon />
+        </IconButton>
         <div className={classes.container}>
           <div className={classes.grow} />
             <img className={classes.logo} src={logo} alt="DiGi Transform logo" />
