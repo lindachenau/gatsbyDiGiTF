@@ -1,3 +1,5 @@
+require('dotenv').config({ path: ".env.production", });
+
 module.exports = {
   siteMetadata: {
     title: 'DiGi Transform website',
@@ -45,7 +47,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "G-QGNK2YRZ19",
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        head: true
       },
     },
   
