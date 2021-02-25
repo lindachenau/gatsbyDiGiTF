@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 const CLIENT_ID = process.env.GOOGLE_DRIVE_CLIENT_ID
 const API_KEY = process.env.GOOGLE_DRIVE_API_KEY     
 // const SCOPES = "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.appdata https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.metadata https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/drive.photos.readonly https://www.googleapis.com/auth/drive.readonly"
-const SCOPES = "https://www.googleapis.com/auth/drive.readonly"
+const SCOPES = "https://www.googleapis.com/auth/drive.file"
 
 const GDriveInit = ({ setGSignedIn }) => {
   useEffect(() => {

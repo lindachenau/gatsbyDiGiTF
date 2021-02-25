@@ -3,51 +3,19 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
 import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"
 import styles from  './gallery.module.scss'
-// import { makeStyles } from '@material-ui/core/styles';
-// import GridList from '@material-ui/core/GridList';
-// import GridListTile from '@material-ui/core/GridListTile';
 
 const Gallery = ({ images, colWidth }) => {
   const [photoIndex, setPhotoIndex] =  useState(0)
   const [isOpen, setIsOpen] = useState(false)
-  
-  // const useStyles = makeStyles((theme) => ({
-  //   root: {
-  //     display: 'flex',
-  //     flexWrap: 'wrap',
-  //     justifyContent: 'space-between',
-  //     overflow: 'hidden',
-  //     backgroundColor: theme.palette.background.paper,
-  //   }
-  // }));
-
-  // const classes = useStyles();
-
-  // const renderImages = () => {
-  //   let photoIndex = -1;
-    
-  //   return images.map((tile, index) => {
-  //     photoIndex++;
-  //     const privateKey = photoIndex;
-  //     return (
-  //       <GridListTile key={tile}>
-  //         <img 
-  //           src={tile} 
-  //           alt="Gallery" 
-  //           onClick={() => {
-  //             setPhotoIndex(privateKey)
-  //             setIsOpen(true)
-  //           }}
-  //           className={styles.figBox}        
-  //         />
-  //       </GridListTile>
-  //     )
-  //   })
-  // }
 
   const renderImages = () => {
     let photoIndex = -1;
-    
+
+    const genSrcSet = (src) => {
+      const srcSet = `${src}?tr=w-600 600w, ${src}?tr=w-900 900w, ${src}?tr=w-1200 1200w`
+      return srcSet
+    }
+      
     return images.map((imageSrc, index) => {
       photoIndex++;
       const privateKey = photoIndex;
@@ -56,8 +24,10 @@ const Gallery = ({ images, colWidth }) => {
           <figure className={styles.figBox}>
             <img
               src={imageSrc}
+              srcset={genSrcSet(imageSrc)}
               alt="Gallery"
               className="img-fluid z-depth-1"
+              loading="lazy"
               onClick={() => {
                 setPhotoIndex(privateKey)
                 setIsOpen(true)
@@ -72,11 +42,6 @@ const Gallery = ({ images, colWidth }) => {
   return (
     <MDBContainer className="mt-3" >
       <div className="mdb-lightbox">
-        {/* <div className={classes.root}>
-          <GridList cellHeight='300' cols={3}>
-            {renderImages()}
-          </GridList>
-        </div>  */}
         <MDBRow>
           {renderImages()}
         </MDBRow>

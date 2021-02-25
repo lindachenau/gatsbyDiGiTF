@@ -8,18 +8,40 @@ import CustomNavLink from './custom-link'
 import Logo from "../images/logo-48x48.png"
 import styles from  './navbar.module.scss'
 import { isLoggedIn, logout } from './app-user'
+import axios from "axios"
+// import GDriveInit from './gdrive-ini'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [loggedIn, setLoggedIn] = useState(isLoggedIn())
+  const [gSignedIn, setGSignedIn] = useState(false)
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen)
-  }
-
+  }    
+  
   const signout = () => {
     logout()
     setLoggedIn(false)
+  }
+  
+  const gotoWatercolour = async() => {
+    let imgList = []
+    try {
+      const config = {
+        method: 'post',
+        headers: {"Content-Type": "application/json"},
+        url: process.env.IMAGEKIT_LIST_FILES,
+        data: {
+          "path" : "watercolour"
+        }          
+      }      
+      const result = await axios(config)
+      imgList = result.data
+    } catch (err) {
+      console.log(err)
+    }
+    navigate("/watercolour", {state: imgList})
   }
 
   return (
@@ -53,7 +75,16 @@ const Navbar = () => {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
                   <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/photos")}>Photos</MDBDropdownItem>
-                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/digital-art")}>Digital arrt</MDBDropdownItem>
+                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/digital-art")}>Digital art</MDBDropdownItem>
+                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={gotoWatercolour}>Watercolour</MDBDropdownItem>
+                  {/* External link to Google Photos */}
+                  {/* <a 
+                    href="https://photos.app.goo.gl/wrzoHVtjjNUc4PCe7" 
+                    target='_blank' 
+                    className={`white-text nav-link ${styles.dropdownItem}`}
+                  >
+                    Watercolour
+                  </a> */}
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

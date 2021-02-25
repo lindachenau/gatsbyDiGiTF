@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <>
         <Layout>
-          <SEO title="Home" keywords={[`gatsby`, `react`, `Material Design For Bootstrap`, `DiGi Transform`, `digital transformation`]} />
+          <SEO title="Home" keywords={[`gatsby`, `react`, `web application`, `DiGi Transform`, `digital transformation`]} />
           <Carousel imgList={imgList}/>
           <Intro />
           <main>

@@ -2,11 +2,17 @@
 
 .fig-box {
   &:hover {
-    cursor: zoom-in;
+    cursor: nesw-resize;
 
     @media screen and (min-width: 768px) {
       box-shadow: 10px 5px 5px 1px $mdb-color-lighten-3;
     }
 
+  }
+}
+
+.img-box {
+  &:hover {
+    cursor: nesw-resize;
   }
 }

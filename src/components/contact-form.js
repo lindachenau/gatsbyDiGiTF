@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 
-const logo = require('../images/DiGiTF_logo_Transparency.png')
+const logo = require('../images/DiGiTF_Logo.png')
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -148,7 +148,13 @@ export default function ContactForm({theme, triggerOpen, initOpen}) {
             />                                  
         </DialogContent>
         <DialogActions className={classes.button}>
-          <Button variant="contained" onClick={handleSend} color="primary" fullWidth>
+          <Button 
+            variant="contained" 
+            onClick={handleSend} 
+            color="primary" 
+            disabled={name === '' || email === '' || message === ''}
+            fullWidth
+          >
             Send
           </Button>
         </DialogActions>

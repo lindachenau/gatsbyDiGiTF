@@ -26,19 +26,26 @@ const Gallery2 = ({ images }) => {
   const renderImages = () => {
     let photoIndex = -1;
     
-    return images.map((tile, index) => {
+    const genSrcSet = (src) => {
+      const srcSet = `${src}?tr=w-600 600w, ${src}?tr=w-900 900w, ${src}?tr=w-1200 1200w`
+      return srcSet
+    }
+
+    return images.map((imageSrc) => {
       photoIndex++;
       const privateKey = photoIndex;
       return (
-        <GridListTile key={tile}>
+        <GridListTile key={imageSrc}>
           <img 
-            src={tile} 
-            alt="Gallery" 
+            src={imageSrc}
+            srcset={genSrcSet(imageSrc)}
+            alt="Gallery"
+            loading="lazy"
             onClick={() => {
               setPhotoIndex(privateKey)
               setIsOpen(true)
             }}
-            className={styles.figBox}        
+            className={styles.imgBox}
           />
         </GridListTile>
       )
