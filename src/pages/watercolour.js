@@ -2,23 +2,42 @@ import React, { useEffect, useState } from 'react'
 import Layout from '../components/layout'
 import Content from '../components/content'
 import Gallery2 from '../components/gallery2'
+import axios from "axios"
 
-const Watercolour = ({location}) => {
+const Watercolour = () => {
   const [images, setImages] = useState([])
 
   useEffect(() => {
-    //Remove the key property added by Gatsby
-    if (location.state) {
-      delete location.state.key
-      setImages(Object.values(location.state).sort((a, b) => {
-        if (a.name < b.name)
-          return 1
-        else
-          return -1
-        })
-      )
+    const fetchFileList = async () => {
+      try {
+        const config = {
+          method: 'post',
+          headers: {"Content-Type": "application/json"},
+          url: process.env.IMAGEKIT_LIST_FILES,
+          data: {
+            "path" : "watercolour"
+          }          
+        }      
+        const result = await axios(config)
+        const imgList = result.data
+        /*
+        * Sort by image number IMG_XXXX in descending order. The more recent have bigger numbers.
+        * URL in imagekit.io https://ik.imagekit.io/roigtmewkv6/watercolour/IMG_3164_J9mA6KGXj.JPG 
+        */
+        setImages(imgList.sort((a, b) => {
+          if (a.substring(51, 55) < b.substring(51, 55))
+            return 1
+          else
+            return -1
+          })
+        )
+      } catch (err) {
+        console.log(err)
       }
-  }, [location.state]) 
+    }
+
+    fetchFileList()
+  }, []) 
 
   return (
     <Layout>

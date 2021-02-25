@@ -8,7 +8,6 @@ import CustomNavLink from './custom-link'
 import Logo from "../images/logo-48x48.png"
 import styles from  './navbar.module.scss'
 import { isLoggedIn, logout } from './app-user'
-import axios from "axios"
 // import GDriveInit from './gdrive-ini'
 
 const Navbar = () => {
@@ -25,25 +24,6 @@ const Navbar = () => {
     setLoggedIn(false)
   }
   
-  const gotoWatercolour = async() => {
-    let imgList = []
-    try {
-      const config = {
-        method: 'post',
-        headers: {"Content-Type": "application/json"},
-        url: process.env.IMAGEKIT_LIST_FILES,
-        data: {
-          "path" : "watercolour"
-        }          
-      }      
-      const result = await axios(config)
-      imgList = result.data
-    } catch (err) {
-      console.log(err)
-    }
-    navigate("/watercolour", {state: imgList})
-  }
-
   return (
     <MDBNavbar dark expand="md">
       <MDBContainer>
@@ -76,7 +56,7 @@ const Navbar = () => {
                 <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
                   <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/photos")}>Photos</MDBDropdownItem>
                   <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/digital-art")}>Digital art</MDBDropdownItem>
-                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={gotoWatercolour}>Watercolour</MDBDropdownItem>
+                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/watercolour")}>Watercolour</MDBDropdownItem>
                   {/* External link to Google Photos */}
                   {/* <a 
                     href="https://photos.app.goo.gl/wrzoHVtjjNUc4PCe7" 
