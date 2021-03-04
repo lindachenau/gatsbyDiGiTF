@@ -9,7 +9,7 @@ const Watercolour = () => {
 
   useEffect(() => {
     const fetchFileList = async () => {
-      const url = process.env.IMAGEKIT_LIST_FILES
+      const url = process.env.GATSBY_IMAGEKIT_LIST_FILES
       try {
         const config = {
           method: 'post',
