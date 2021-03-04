@@ -4,8 +4,7 @@ import Content from '../components/content'
 import bgImg from "../images/salzburg.jpeg"
 import Background from '../components/background'
 import "./about.css"
-
-const avatar = require("../images/linda.jpeg")
+import avatar from "../images/linda.jpeg"
 
 const About = () => (
   <Layout>
