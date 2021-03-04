@@ -32,7 +32,7 @@ const Watercolour = () => {
           })
         )
       } catch (err) {
-        console.log("imagekit.io file list error", err)
+        console.log(`imagekit.io file list error @ url ${process.env.IMAGEKIT_LIST_FILES}`, err)
       }
     }
 
