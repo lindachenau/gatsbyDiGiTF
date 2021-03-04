@@ -9,11 +9,12 @@ const Watercolour = () => {
 
   useEffect(() => {
     const fetchFileList = async () => {
+      const url = IMAGEKIT_LIST_FILES || process.env.IMAGEKIT_LIST_FILES
       try {
         const config = {
           method: 'post',
           headers: {"Content-Type": "application/json"},
-          url: process.env.IMAGEKIT_LIST_FILES,
+          url: url,
           data: {
             "path" : "watercolour"
           }          
@@ -32,7 +33,7 @@ const Watercolour = () => {
           })
         )
       } catch (err) {
-        console.log(`imagekit.io file list error @ url ${process.env.IMAGEKIT_LIST_FILES}`, err)
+        console.log(`imagekit.io file list error @ url ${url}`, err)
       }
     }
 
