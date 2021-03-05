@@ -26,6 +26,8 @@ module.exports = {
 
     // `gatsby-image`,
 
+    `gatsby-plugin-netlify-cms`,
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -53,7 +55,6 @@ module.exports = {
         head: true
       },
     },
-  
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
