@@ -48,7 +48,14 @@ class SignUp extends React.Component {
       await Auth.signUp({
         username,
         password,
-        attributes: { email, phone_number },
+        attributes: { 
+          email, 
+          phone_number, 
+          "custom:role": "user",
+          "custom:photography_sub" : "N",
+          "custom:digitalart_sub" : "N",
+          "custom:watercolour_sub" : "N"
+        },
       })
       this.setState({ stage: 1, loading: false })
     } catch (err) {

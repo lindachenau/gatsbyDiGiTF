@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import {
   MDBContainer, MDBNavbar, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, 
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon
@@ -7,13 +7,16 @@ import { Link, navigate } from 'gatsby'
 import CustomNavLink from './custom-link'
 import Logo from "../images/logo-48x48.png"
 import styles from  './navbar.module.scss'
-import { isLoggedIn, logout } from './app-user'
+import { isLoggedIn, isAdmin, logout } from './app-user'
 // import GDriveInit from './gdrive-ini'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [loggedIn, setLoggedIn] = useState(isLoggedIn())
-  const [gSignedIn, setGSignedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(false)
+
+  useEffect(() => {
+    setLoggedIn(isLoggedIn())
+  }, [])
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen)
@@ -57,14 +60,6 @@ const Navbar = () => {
                   <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/photos")}>Photos</MDBDropdownItem>
                   <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/digital-art")}>Digital art</MDBDropdownItem>
                   <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/watercolour")}>Watercolour</MDBDropdownItem>
-                  {/* External link to Google Photos */}
-                  {/* <a 
-                    href="https://photos.app.goo.gl/wrzoHVtjjNUc4PCe7" 
-                    target='_blank' 
-                    className={`white-text nav-link ${styles.dropdownItem}`}
-                  >
-                    Watercolour
-                  </a> */}
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
@@ -73,18 +68,28 @@ const Navbar = () => {
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="user" />
+                  {loggedIn ?
+                    <MDBIcon icon="user-check" />
+                    :
+                    <MDBIcon icon="user-lock" />
+                  }
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
                   {loggedIn ? 
                     <>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/")}>My account</MDBDropdownItem>
+                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/subscription")}>Subscription</MDBDropdownItem>
+                      {isAdmin() ? 
+                        <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/publishing")}>Publishing</MDBDropdownItem>
+                        :
+                        null
+                      }
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => signout()}>Sign out</MDBDropdownItem>
-                    </> :
+                    </> 
+                    :
                     <>
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/signin")}>Sign in</MDBDropdownItem>
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/signup")}>Create account</MDBDropdownItem>
-                     </>
+                    </>
                   }
                 </MDBDropdownMenu>
               </MDBDropdown>

@@ -35,10 +35,11 @@ class SignIn extends React.Component {
     try {
       this.setState({ loading: true })
       await Auth.signIn(username, password)
-      const user = await Auth.currentAuthenticatedUser()
+      const cognitoUser = await Auth.currentAuthenticatedUser()
+
       const userInfo = {
-        ...user.attributes,
-        username: user.username,
+        ...cognitoUser.attributes,
+        username: cognitoUser.username
       }
       setUser(userInfo)
       this.setState({ loading: false })

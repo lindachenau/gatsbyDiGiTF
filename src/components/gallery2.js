@@ -39,6 +39,7 @@ const Gallery2 = ({ images }) => {
           <img 
             src={imageSrc}
             srcset={genSrcSet(imageSrc)}
+            sizes={typeof window !== `undefined` && window.innerWidth >= 992 ? "33vw" : "100vw"}
             alt="Gallery"
             loading="lazy"
             onClick={() => {
