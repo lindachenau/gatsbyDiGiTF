@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { navigate } from '@reach/router'
+import { Link, navigate } from 'gatsby'
 import { Auth } from 'aws-amplify'
 
 import { setUser } from './app-user'
