@@ -76,34 +76,14 @@ const Navbar = () => {
                   }
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
-                  {/* {loggedIn ? 
+                  {loggedIn ? 
                     <>
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/subscription")}>Subscription</MDBDropdownItem>
-                      {isAdmin() ? 
+                      {/* {isAdmin() ? 
                         <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/publishing")}>Publishing</MDBDropdownItem>
                         :
                         null
-                      }
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => signout()}>Sign out</MDBDropdownItem>
-                    </> 
-                    :
-                    <>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/signin")}>Sign in</MDBDropdownItem>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/signup")}>Create account</MDBDropdownItem>
-                    </>
-                  } */}
-                  {loggedIn ? 
-                    <>
-                      <MDBDropdownItem className={`${styles.dropdownItem}`}>
-                        <Link className="white-text nav-link" to="/subscription">Subscription</Link>
-                      </MDBDropdownItem>
-                      {isAdmin() ? 
-                        <MDBDropdownItem className={`${styles.dropdownItem}`}>
-                          <Link className="white-text nav-link">Publishing</Link>
-                        </MDBDropdownItem>
-                        :
-                        null
-                      }
+                      } */}
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => signout()}>Sign out</MDBDropdownItem>
                     </> 
                     :
