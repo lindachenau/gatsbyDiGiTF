@@ -78,12 +78,12 @@ const Navbar = () => {
                 <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
                   {loggedIn ? 
                     <>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/subscription")}>Subscription</MDBDropdownItem>
-                      {/* {isAdmin() ? 
-                        <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/publishing")}>Publishing</MDBDropdownItem>
+                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/app/subscription")}>Subscription</MDBDropdownItem>
+                      {isAdmin() ? 
+                        <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/app/publishing")}>Publishing</MDBDropdownItem>
                         :
                         null
-                      } */}
+                      }
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => signout()}>Sign out</MDBDropdownItem>
                     </> 
                     :
