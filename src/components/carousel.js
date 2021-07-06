@@ -1,5 +1,6 @@
 import React from "react"
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask } from "mdbreact"
+import "./carousel.css"
 
 const CarouselPage = ({imgList}) => {
     return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/layout'
 import Content from '../components/content'
 import Gallery from '../components/gallery'
 
@@ -153,11 +152,9 @@ const colWidth = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 4, 3]
 
 const DigitalArt = () => (
-  <Layout>
-    <Content title='Digital art'>
-      <Gallery images={images} colWidth={colWidth}/>
-    </Content>
-  </Layout>
+  <Content title='Digital art'>
+    <Gallery images={images} colWidth={colWidth}/>
+  </Content>
 )
 
 export default DigitalArt

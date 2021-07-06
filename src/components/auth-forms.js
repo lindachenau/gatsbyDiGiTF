@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container'
 
 export function AuthForm({ children, title, error }) {
   return (
-    <Container maxWidth="xs" className="mdb-color-text">
+    <Container maxWidth="xs" className="mdb-color-text" style={{paddingTop: "7vh"}}>
       <h2 className="pt-5 pb-3 text-center h2-responsive font-weight-bold" >{title}</h2>
       {error && (
         <p className="text-danger">

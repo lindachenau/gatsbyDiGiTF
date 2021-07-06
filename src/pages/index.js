@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Layout from '../components/layout'
 import Intro from '../components/intro'
 import SEO from '../components/seo'
 import Carousel from '../components/carousel'
@@ -38,30 +37,26 @@ class App extends Component {
   render() {
     return (
       <>
-        <Layout>
-          <SEO title="Home" keywords={[`gatsby`, `react`, `web application`, `DiGi Transform`, `digital transformation`]} />
-          <Carousel imgList={imgList}/>
-          <Intro />
-          <main>
-            <Features/>
-            <section id="cardSection">
-              <h2 className="h1-responsive text-center font-weight-bold mb-5">
-                Our services
-              </h2>
-              <MDBRow className="m-0" center>
-                {imgList.map((item) => 
-                  <Card 
-                    key={item.key}
-                    image={item.name}
-                    title={item.title}
-                    link={item.link}
-                    description={item.description}
-                  />
-                )}
-              </MDBRow>
-            </section>
-          </main>
-        </Layout>
+        <SEO title="Home" keywords={[`gatsby`, `react`, `web application`, `DiGi Transform`, `digital transformation`]} />
+        <Carousel imgList={imgList}/>
+        <Intro />
+        <Features/>
+        <section id="cardSection">
+          <h2 className="h1-responsive text-center font-weight-bold mb-5">
+            Our services
+          </h2>
+          <MDBRow className="m-0" center>
+            {imgList.map((item) => 
+              <Card 
+                key={item.key}
+                image={item.name}
+                title={item.title}
+                link={item.link}
+                description={item.description}
+              />
+            )}
+          </MDBRow>
+        </section>
       </>
     )
   }

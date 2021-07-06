@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Layout from '../components/layout'
 import Content from '../components/content'
 import Gallery2 from '../components/gallery2'
 import axios from "axios"
@@ -41,11 +40,9 @@ const Watercolour = () => {
   }, []) 
 
   return (
-    <Layout>
-      <Content title='Watercolour paintings'>
-        <Gallery2 images={images}/>
-      </Content>
-    </Layout>
+    <Content title='Watercolour paintings'>
+      <Gallery2 images={images}/>
+    </Content>
   )
 }
 

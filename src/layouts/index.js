@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from '@material-ui/styles'
 import { createMuiTheme } from '@material-ui/core/styles'
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import "./layout.css"
 
 const theme = createMuiTheme({
@@ -21,9 +21,13 @@ const theme = createMuiTheme({
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <Navbar/>
-    {children}
-    <Footer />
+    <div className="flexThisBox">
+      <Navbar/>
+      <main>
+        {children}
+      </main>
+      <Footer />
+    </div>
   </ThemeProvider>
 )
 

@@ -7,16 +7,12 @@ import { Link, navigate } from 'gatsby'
 import CustomNavLink from './custom-link'
 import Logo from "../images/logo-48x48.png"
 import styles from  './navbar.module.scss'
+import './navbar.css'
 import { isLoggedIn, isAdmin, logout } from './app-user'
 // import GDriveInit from './gdrive-ini'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [loggedIn, setLoggedIn] = useState(false)
-
-  useEffect(() => {
-    setLoggedIn(isLoggedIn())
-  }, [])
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen)
@@ -27,9 +23,9 @@ const Navbar = () => {
     setLoggedIn(false)
     navigate("/")
   }
-  
+
   return (
-    <MDBNavbar dark expand="md">
+    <MDBNavbar dark expand="md" id="navbar">
       <MDBContainer>
         <Link className="waves-effect waves-light" to='/' style={{display: 'flex', alignItems: 'center'}}>
           <img width={40} src={Logo} className="mr-3" alt="DiGi Transform logo" />
@@ -69,14 +65,14 @@ const Navbar = () => {
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  {loggedIn ?
+                  {isLoggedIn() ?
                     <MDBIcon icon="user-check" />
                     :
                     <MDBIcon icon="user-lock" />
                   }
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
-                  {loggedIn ? 
+                  {isLoggedIn() ? 
                     <>
                       <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/app/subscription")}>Subscription</MDBDropdownItem>
                       {isAdmin() ? 

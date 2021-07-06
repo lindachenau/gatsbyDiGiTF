@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/layout'
 import Content from '../components/content'
 import Gallery from '../components/gallery'
 
@@ -69,11 +68,9 @@ const images = [
 const colWidth = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 5, 3]
 
 const Photos = () => (
-  <Layout>
-    <Content title='My photos'>
-      <Gallery images={images} colWidth={colWidth}/>
-    </Content>
-  </Layout>
+  <Content title='My photos'>
+    <Gallery images={images} colWidth={colWidth}/>
+  </Content>
 )
 
 export default Photos

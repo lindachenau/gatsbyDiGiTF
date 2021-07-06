@@ -20,12 +20,6 @@ module.exports = {
       },
     },
 
-    // `gatsby-transformer-sharp`,
-
-    // `gatsby-plugin-sharp`,
-
-    // `gatsby-image`,
-
     `gatsby-plugin-netlify-cms`,
     
     {
@@ -55,8 +49,11 @@ module.exports = {
         head: true
       },
     },
+
+    `gatsby-plugin-layout`,
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 }
