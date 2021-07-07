@@ -5,7 +5,7 @@ import {
 } from "mdbreact"
 import { Link, navigate } from 'gatsby'
 import CustomNavLink from './custom-link'
-import Logo from "../images/logo-48x48.png"
+import Logo from "../images/DiGiTF_128.png"
 import styles from  './navbar.module.scss'
 import './navbar.css'
 import { isLoggedIn, isAdmin, logout } from './app-user'

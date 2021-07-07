@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#4B5EB8`,
         theme_color: `#68008C`,
         display: `standalone`,
-        icon: `${__dirname}/src/images/logo-48x48.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/DiGiTF_128.png`, // This path is relative to the root of the site.
       },
     },
 

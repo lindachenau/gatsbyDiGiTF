@@ -22,7 +22,7 @@ const Footer = () => {
             </h6>
           </MDBCol>
           <MDBCol md="2" className="b-3">
-            <a onClick={() => setTriggerContact(!triggerContact)}>
+            <a role="button" onClick={() => setTriggerContact(!triggerContact)}>
               <h6 className="title font-weight-bold">Contact</h6>
             </a>
           </MDBCol>
@@ -46,13 +46,13 @@ const Footer = () => {
         <MDBRow>
           <MDBCol md="12">
             <div className="mb-3 flex-center">
-              <a href='https://www.facebook.com/linda.chen.18659/' alt="" target='_blank'>
+              <a href='https://www.facebook.com/linda.chen.18659/' alt="facebook" target='_blank' rel="noreferrer">
                 <MDBIcon fab icon="facebook-f" size="lg" className="mx-2 white-text mr-md-4" />
               </a>
-              <a href='https://www.linkedin.com/in/linda-yu-ling-chen-1227764/' alt="" target='_blank'>
+              <a href='https://www.linkedin.com/in/linda-yu-ling-chen-1227764/' alt="linkedin" target='_blank' rel="noreferrer">
                 <MDBIcon fab icon="linkedin-in" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>
               </a>
-              <a href='https://www.pinterest.com.au/lchen0263/boards/' alt="" target='_blank'>
+              <a href='https://www.pinterest.com.au/lchen0263/boards/' alt="pinterest" target='_blank' rel="noreferrer">
                 <MDBIcon fab icon="pinterest" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>
               </a>
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
           <MDBCol md="4" >
             <div className="text-center">
               <i className="fas fa-map-marker-alt mr-2"></i>
-              <a href='https://www.google.com/maps/place/2+Hillview+Rd,+Eastwood+NSW+2122/@-33.7904974,151.0815816,15z/data=!4m5!3m4!1s0x6b12a439e4dfcc77:0x3184686087efe006!8m2!3d-33.790906!4d151.0815375' alt="" target='_blank'>
+              <a href='https://www.google.com/maps/place/2+Hillview+Rd,+Eastwood+NSW+2122/@-33.7904974,151.0815816,15z/data=!4m5!3m4!1s0x6b12a439e4dfcc77:0x3184686087efe006!8m2!3d-33.790906!4d151.0815375' alt="" target='_blank' rel="noreferrer">
                 2 Hillview Rd, Eastwood 2122, NSW
               </a>
             </div>
