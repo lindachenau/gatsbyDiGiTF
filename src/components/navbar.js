@@ -20,7 +20,6 @@ const Navbar = () => {
   
   const signout = () => {
     logout()
-    setLoggedIn(false)
     navigate("/")
   }
 
@@ -43,9 +42,9 @@ const Navbar = () => {
             <MDBNavItem>
               <CustomNavLink to="/about">About</CustomNavLink>
             </MDBNavItem>
-            {/* <MDBNavItem>
+            <MDBNavItem>
               <CustomNavLink to="/blog">Blog</CustomNavLink>
-            </MDBNavItem>             */}
+            </MDBNavItem>            
           </MDBNavbarNav>  
           <MDBNavbarNav left>
             <MDBNavItem>
