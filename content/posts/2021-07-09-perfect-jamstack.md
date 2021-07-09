@@ -6,7 +6,7 @@ socialImage: /media/jamstack.png
 draft: true
 date: 2021-07-09T08:57:30.051Z
 description: React, Amplify, Gatsby and Netlify CMS
-category: Web App, SW architecture
+category: Web App, solution architecture
 tags:
   - JAMstack
   - Amplify
