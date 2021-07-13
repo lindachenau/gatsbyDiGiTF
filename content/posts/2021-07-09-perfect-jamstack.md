@@ -20,4 +20,6 @@ tags:
   - Netlify
   - CMS
 ---
+I started learning web development in 2019. Although I've benn SW/HW engineer for more than 20+ years, the concept of "full stack" was only a term I saw often in job recruitment ads. Not knowing where to start, I took several hand-on courses on Plural Sight. My first project was a static website and I was asked to use Wordpress (one of the most popular LAMP stacks). It was a good PHP, HTML and CSS and a bit of JS. Samer Buna I've never  Without any 
+
 This is my perefect combination.
