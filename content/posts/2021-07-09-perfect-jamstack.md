@@ -12,7 +12,7 @@ description: "React is a great frontend library for creating customised modern
   you publish the content, the data (markdown and media) are pushed to your
   Github project repository from which you can host your website on any static
   site hosting providers such as Amplify, Netlify and Vercel etc.. "
-category: Web App, solution architecture
+category: Web App
 tags:
   - JAMstack
   - Amplify
