@@ -20,6 +20,8 @@ tags:
   - Netlify
   - CMS
 ---
+![JAMstack](/media/jamstack.png "JAMstack")
+
 I started learning web development in 2019. Although I've been a SW/HW engineer for more than 20+ years, the concept of "full stack" was only a term I saw often in job recruitment ads. Not knowing where to start, I took several hand-on courses on Plural Sight. My first project was a static website and I was asked to use Wordpress (one of the most popular LAMP stacks). It was a good starting point to learn and practice PHP, HTML, CSS and a bit of JS. The only challenging part was using CSS tricks to match the layout design. 
 
 The second project was a booking web app. I researched a few popular frameworks such as React, Angular and Laravel. I then took several introductory courses to get the flavour of each. React 16.8 (The first Hooks stable release) was out at that time and Samer Buna (a Plural Sight instructor) convinced me that React functional components are the future. Hooks make React component life cycle so much easier to manage. After deciding using React, CRA framework seemed a a good starting point for my first PWA project. Thanks to the rich React ecosystem from which I obtained UI components (Material UI) and a major functional component (react-big-calendar). I also used AWS lambda functions to implement APIs to talk to 3rd party backend services and some support functions such as sending emails, reminder SMS and automatic booking cancellations. Thanks to Fernando Medina Corey who introduced me to serverless framework on Plural Sight and I experienced the benefit of "infrastructure as code" for the first time.
