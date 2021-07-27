@@ -28,4 +28,4 @@ After my second project, I decided to use my personal website as a play ground t
 
 My third project was a booking website for a medical practice. The website has some static contents and also serves as a booking app for booking appointments on the medical SW for general practices. Gatsby is a perfect fit for this project. Amplify provided all my backend needs. I used Cognito for user authentication and API (GraphQL) for user's multi-patient appointment management system. When I finished the project, I realised that it was nearly impossible to maintain the static content defined in markdown format by the practice non-technical stuff. To solve this problem, I looked a few headless CMS and tried Netlify CMS and Contentful. I decided on Netlify CMS because it's free and simple.
 
-This is my journey from LAMP Stack to JAM Stack. On the way I found my perfect combination.
+This is my journey from LAMP Stack to JAM Stack. On the way I found my perfect combination!
