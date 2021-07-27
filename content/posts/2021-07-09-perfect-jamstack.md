@@ -3,7 +3,7 @@ template: post
 title: "My Perfect JAMstack "
 slug: perfect-jamstack
 socialImage: /media/jamstack.png
-draft: true
+draft: false
 date: 2021-07-09T08:57:30.051Z
 description: "React is a great frontend library for creating customised modern
   UI. AWS Amplify offers Authentication, storage, api and function services.
