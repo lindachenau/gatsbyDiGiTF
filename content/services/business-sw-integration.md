@@ -1,6 +1,7 @@
 ---
 template: article
 title: "Business SW Integration"
+slug: business-sw-integration
 sequence: "2"
 date: "2020-06-04"
 keywords: "business"

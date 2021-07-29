@@ -1,6 +1,7 @@
 ---
 template: article
 title: "Custom Design"
+slug: custom-design
 sequence: "3"
 date: "2020-06-04"
 keywords: "design"

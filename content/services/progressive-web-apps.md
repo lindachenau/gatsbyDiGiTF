@@ -1,6 +1,7 @@
 ---
 template: article
 title: "Progressive Web Apps (PWA)"
+slug: progressive-web-apps
 sequence: "1"
 date: "2020-06-04"
 keywords: "javascript"
