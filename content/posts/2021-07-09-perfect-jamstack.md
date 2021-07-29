@@ -20,7 +20,6 @@ tags:
   - Netlify
   - CMS
 ---
-![jamstack.png](/media/jamstack.png "JAM Stack")
 
 I started learning web development in 2019. Although I've been a SW/HW engineer for more than 20+ years, the concept of "full stack" was only a term I saw often in job recruitment ads. Not knowing where to start, I took several hand-on courses on Plural Sight. My first project was a static website and I was asked to use Wordpress (one of the most popular LAMP stacks). It was a good starting point to learn and practice PHP, HTML, CSS and a bit of JS. The only challenging part was using CSS tricks to match the layout design. 
 
