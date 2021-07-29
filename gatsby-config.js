@@ -15,8 +15,16 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-          name: 'files',
-          path: `${__dirname}/src/markdown`,
+          name: 'services',
+          path: `${__dirname}/content/services`,
+      },
+    },
+
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+          name: 'posts',
+          path: `${__dirname}/content/posts`,
       },
     },
 
@@ -31,7 +39,7 @@ module.exports = {
         background_color: `#4B5EB8`,
         theme_color: `#68008C`,
         display: `standalone`,
-        icon: `${__dirname}/src/images/DiGiTF_128.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/static/DiGiTF_128.png`, // This path is relative to the root of the site.
       },
     },
 

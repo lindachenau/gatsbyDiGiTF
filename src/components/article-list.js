@@ -6,7 +6,10 @@ export default () => (
    <StaticQuery
 
       query = { graphql `query {
-         allMarkdownRemark(sort: {fields: [frontmatter___sequence], order: ASC}) {
+         allMarkdownRemark(
+            filter: { frontmatter: { template: { eq: "article" }} },
+            sort: {fields: [frontmatter___sequence], order: ASC}
+            ) {
            totalCount
            edges {
              node {

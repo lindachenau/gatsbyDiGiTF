@@ -5,7 +5,7 @@ import {
 } from "mdbreact"
 import { Link, navigate } from 'gatsby'
 import CustomNavLink from './custom-link'
-import Logo from "../images/DiGiTF_128.png"
+import Logo from "../../static/DiGiTF_128.png"
 import styles from  './navbar.module.scss'
 import './navbar.css'
 import { isLoggedIn, isAdmin, logout } from './app-user'
@@ -37,14 +37,14 @@ const Navbar = () => {
               <CustomNavLink to="/">Home</CustomNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <CustomNavLink to="/articles">Articles</CustomNavLink>
+              <CustomNavLink to="/services">Services</CustomNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <CustomNavLink to="/about">About</CustomNavLink>
             </MDBNavItem>
-            {/* <MDBNavItem>
+            <MDBNavItem>
               <CustomNavLink to="/blog">Blog</CustomNavLink>
-            </MDBNavItem>             */}
+            </MDBNavItem>            
           </MDBNavbarNav>  
           <MDBNavbarNav left>
             <MDBNavItem>

@@ -3,24 +3,43 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 media_folder: "static/media"
 public_folder: "/media"
+display_url: https://digitransform.com.au
+logo_url: https://digitransform.com.au/DiGiTF_128.png
+show_preview_links: true
 
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+  - name: "posts" # Used in routes, e.g., /admin/collections/posts
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    preview_path: "blog/{{fields.slug}}"
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Social Image", name: "socialImage", widget: "image"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+
+collections:
+  - name: "services" # Used in routes, e.g., /admin/collections/services
+    label: "Services" # Used in the UI
+    folder: "content/services" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    preview_path: "blog/{{fields.slug}}"
+    fields:
+      - {label: "Template", name: "template", widget: "hidden", default: "article"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sequence", name: "sequence", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Keywords", name: "keywords", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
