@@ -10,7 +10,7 @@ keywords: "business"
 ##Spend more time in expanding business and less time in business administration
 
 Integrate your web application with back-end systems to improve productivity and reporting 
-efficiency.<!-- end -->
+efficiency.
 
 Integrating your web application with back-end systems (e.g. accounting systems such as MYOB or 
 Xero and CRM solutions) has many benefits. These advantages range from improved data 

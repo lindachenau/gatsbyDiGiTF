@@ -10,7 +10,7 @@ keywords: "javascript"
 ##The future of web design
 
 Progressive Web Apps can be accessed anywhere on the web without any install friction, 
-while still providing a quality mobile experience that users expect.<!-- end -->
+while still providing a quality mobile experience that users expect.
 
 Native mobile apps require a dedicated SW maintenance team to keep up with new iOS and
 Android releases. Because there are two separate native code bases, the maintenance cost

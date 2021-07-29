@@ -13,7 +13,7 @@ const imgList = [
     alt: "First slide",
     title: "Web app development",
     description: "We build super fast beautiful responsive web applications that rival the performance of native apps.",
-    link: "/progressive-web-apps"
+    link: "/services/progressive-web-apps"
   },
   {
     name: require("../images/integration.jpeg"),
@@ -21,7 +21,7 @@ const imgList = [
     alt: "Second slide",
     title: "Business SW integration",
     description: "We integrate your web applications with your business applications for real-time reporting and business insight.",
-    link: "/business-sw-integration"
+    link: "/services/business-sw-integration"
   },
   {
     name: require("../images/design.jpeg"),
@@ -29,7 +29,7 @@ const imgList = [
     alt: "Third slide",
     title: "Custom UX/UI design",
     description: "We create custom UI solutions to meet client's requirements and solve complex business problems.",
-    link: "/custom-design"
+    link: "/services/custom-design"
   }
 ]
 

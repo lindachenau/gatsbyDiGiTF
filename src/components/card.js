@@ -11,7 +11,7 @@ const Card = ({image, title, description, link=null, handleSubscription, subscri
                     <MDBCardTitle>{title}</MDBCardTitle>
                     <MDBCardText>{description}</MDBCardText>
                     {link ? 
-                        <MDBBtn color='info' onClick={() => navigate(link)}>"Read"</MDBBtn>
+                        <MDBBtn color='info' onClick={() => navigate(link)}>Read</MDBBtn>
                         :
                         <MDBBtn color='info' onClick={handleSubscription}>{subscription ? "Unsubscribe" : "Subscribe"}</MDBBtn>
                     }
