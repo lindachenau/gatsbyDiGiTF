@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const Feed = ({ edges }) => (
   <>
     {edges.map((edge) => (
-      <div key={edge.node.fields.slug}>
+      <div key={edge.node.fields.slug} className="mb-4">
         <time dateTime={ new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}>
         { new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
         </time>

@@ -7,7 +7,8 @@ export default ({ data }) => {
 
   return (
     <Content title={post.frontmatter.title}>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <img src={post.frontmatter.socialImage} className="d-inline-block" alt={post.frontmatter.socialImage}/>
+      <div className="d-inline" dangerouslySetInnerHTML={{ __html: post.html }} />
     </Content>
   )
 }
@@ -18,7 +19,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        keywords
+        socialImage
       }
     }
   }
