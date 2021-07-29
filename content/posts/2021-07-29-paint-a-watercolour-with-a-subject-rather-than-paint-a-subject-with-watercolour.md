@@ -11,6 +11,6 @@ category: Watercolopur
 tags:
   - Inspiraation
 ---
-![](/media/img_3393.jpg)
+![](/media/elephants.jpg)
 
 My favourite watercolour artist
