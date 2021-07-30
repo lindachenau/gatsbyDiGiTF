@@ -10,7 +10,7 @@ export default ({ data }) => {
       <div style={{ 
         width: '100%', 
         height: '200px', 
-        backgroundImage: `Url(https://source.unsplash.com/960x200/?${article.frontmatter.keywords.replace(' ', '&')})`, 
+        backgroundImage: `Url(https://source.unsplash.com/960x200/?${article.frontmatter.keyword})`, 
         backgroundSize: 'cover', 
         backgroundPosition: '50% 0',
         backgroundRepeat: 'no-repeat', 
@@ -27,7 +27,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        keywords
+        keyword
       }
     }
   }

@@ -38,8 +38,8 @@ collections:
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "article"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub title", name: "subTitle", widget: "string"}
       - {label: "Sequence", name: "sequence", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Keywords", name: "keywords", widget: "list"}
+      - {label: "Keyword", name: "keyword", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

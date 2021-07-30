@@ -1,16 +1,14 @@
 ---
 template: article
 title: "Business SW Integration"
+subTitle: "Spend more time in expanding business and less time in business administration"
 slug: business-sw-integration
 sequence: "2"
-date: "2020-06-04"
-keywords: "business"
+keyword: "business"
 ---
 
-##Spend more time in expanding business and less time in business administration
-
 Integrate your web application with back-end systems to improve productivity and reporting 
-efficiency.
+efficiency.<!-- end -->
 
 Integrating your web application with back-end systems (e.g. accounting systems such as MYOB or 
 Xero and CRM solutions) has many benefits. These advantages range from improved data 

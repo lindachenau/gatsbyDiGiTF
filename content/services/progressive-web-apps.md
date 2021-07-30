@@ -1,16 +1,14 @@
 ---
 template: article
 title: "Progressive Web Apps (PWA)"
+subTitle: "The future of web design"
 slug: progressive-web-apps
 sequence: "1"
-date: "2020-06-04"
-keywords: "javascript"
+keyword: "javascript"
 ---
 
-##The future of web design
-
 Progressive Web Apps can be accessed anywhere on the web without any install friction, 
-while still providing a quality mobile experience that users expect.
+while still providing a quality mobile experience that users expect.<!-- end -->
 
 Native mobile apps require a dedicated SW maintenance team to keep up with new iOS and
 Android releases. Because there are two separate native code bases, the maintenance cost

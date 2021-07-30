@@ -19,9 +19,9 @@ export default () => (
                id
                frontmatter {
                  title
+                 subTitle
                  sequence
-                 date(formatString: "MMMM YYYY")
-                 keywords
+                 keyword
                }
                excerpt
              }
@@ -36,9 +36,9 @@ export default () => (
             {data.allMarkdownRemark.edges.map(({ node }) => (
                <Article key={node.id}
                   to={node.fields.slug}
-                  keywords={node.frontmatter.keywords}
+                  keyword={node.frontmatter.keyword}
                   title={node.frontmatter.title}
-                  date={node.frontmatter.date}
+                  subTitle={node.frontmatter.subTitle}
                   excerpt={node.excerpt} />
             ))}
          </div>
