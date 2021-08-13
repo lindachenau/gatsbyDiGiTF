@@ -25,13 +25,11 @@ After I have a bit more control on how wet paints behave on papers, I encountere
 
 Until I came across Hazel Soan's YouTube watercolour tutorial, I didn'realise that what makes watercolour so appealing is the way it catpures light and shade. It's analogous to HDR except there is no bounds. The light areas which was left unpainted (the colour of paper) together with the soft blends of colours has such a profound effect on light. Never have I felt that light is so beautiful. No wonder some artists said the subject of their painting is light.  
 
-My imitation of Hazel Soan's African elephants
+Since the "subject" of a watercolour painting is light, the subject no longer matters. When I heard Hazel Soan say " Painting a watercolour with a subject rather than painting a subject with watercolour", it was an epiphany for me. To learn more from her, I bought two of her books - The essence of watercolour and 10-minute watercolours. I really enjoyed both books. Her enthusiasm is felt all over the book with her poetic languages. I used to spend so much time in finding my subjects to paint and now I realised that subject doesn’t matter at all. Even a pair of sneakers can make an interesting painting if you get the right light and shades.
 
-The essence of watercolour 10-minute watercolours
+Looking at the beautiful painting examples in her book, I couldn't help to imitate some of them. The picture on the top is my imitation of Hazel Soan's African elephants. The picture on the right is my imitation of The Rocky Beach in 10-minute watercolours. I'm generally quite pleased with my results when I imitate a painting I like. However when imitation ends, art begins. I need to learn to paint my own using the skills I learn from imitation.
 
 <figure class="float-right" style="width: 240px">
 	<img src="/media/img_3429.jpg" alt="The Rocky Beach">
 	<figcaption>My imitation of The Rocky Beach in Hazel Soan's 10-minute watercolours</figcaption>
 </figure>
-
-When imitation ends, art begins.
