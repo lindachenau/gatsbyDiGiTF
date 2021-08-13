@@ -6,7 +6,13 @@ slug: paint-a-watercolour
 socialImage: /media/elephants.jpg
 draft: false
 date: 2021-07-29T05:02:58.107Z
-description: My imitation of Hazel Soan's African elephants
+description: Until I came across Hazel Soan's YouTube watercolour tutorial, I
+  didn'realise that what makes watercolour so appealing is the way it catpures
+  light and shade. It's analogous to HDR except there is no bounds. The light
+  areas which was left unpainted (the colour of paper) together with the soft
+  blends of colours has such a profound effect on light. Never have I felt that
+  light is so beautiful. No wonder some artists said the subject of their
+  painting is light.
 category: Watercolopur
 tags:
   - Inspiration
@@ -17,7 +23,9 @@ It is not an easy media to learn. I started by 2 Domestika watercolour tutorials
 
 After I have a bit more control on how wet paints behave on papers, I encountered another road blocker. I found I produced much better works if I copied the works from other artists. Every time before I started painting, I spent a lot of time finding a subject from my photos. Naturally I was attracted to photos with an interesting subject such as famous landmarks and tourist attractions. Unfortunately my painting had always been a disappointment compared to the original photo.
 
-Until I came across Hazel Soan's YouTube watercolour tutorial. light and shade
+Until I came across Hazel Soan's YouTube watercolour tutorial, I didn'realise that what makes watercolour so appealing is the way it catpures light and shade. It's analogous to HDR except there is no bounds. The light areas which was left unpainted (the colour of paper) together with the soft blends of colours has such a profound effect on light. Never have I felt that light is so beautiful. No wonder some artists said the subject of their painting is light.  
+
+My imitation of Hazel Soan's African elephants
 
 The essence of watercolour 10-minute watercolours
 
