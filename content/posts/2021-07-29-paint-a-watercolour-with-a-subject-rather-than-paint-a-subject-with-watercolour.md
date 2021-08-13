@@ -21,6 +21,9 @@ Until I came across Hazel Soan's YouTube watercolour tutorial. light and shade
 
 The essence of watercolour 10-minute watercolours
 
-![](/media/img_3429.jpg "My imitation of The Rocky Beach from Hazel Soan's 10-minute watercolours")
+<figure class="float-right" style="width: 240px">
+	<img src="/media/img_3429.jpg" alt="The Rocky Beach">
+	<figcaption>My imitation of The Rocky Beach in Hazel Soan's 10-minute watercolours</figcaption>
+</figure>
 
 When imitation ends, art begins.
