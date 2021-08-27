@@ -4,7 +4,7 @@ import "./carousel.css"
 
 const CarouselPage = ({imgList}) => {
     return (
-        <MDBCarousel activeItem={1} length={3} className="z-depth-1 w-100">
+        <MDBCarousel activeItem={1} length={3}>
             <MDBCarouselInner>
                 {imgList.map( image => 
                     <MDBCarouselItem itemId={image.key} key={image.key}>
