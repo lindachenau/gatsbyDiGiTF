@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export default ({ data, theme }) => {
+const PostTemplate = ({ data, theme }) => {
   const post = data.markdownRemark
   const classes = useStyles(theme)
 
@@ -30,6 +30,8 @@ export default ({ data, theme }) => {
     </Content>
   )
 }
+
+export default PostTemplate
 
 export const query = graphql`
   query($slug: String!) {

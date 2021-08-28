@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
 import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"
-import styles from  './gallery.module.scss'
+import './gallery.css'
 
 const Gallery = ({ images, colWidth }) => {
   const [photoIndex, setPhotoIndex] =  useState(0)
@@ -21,7 +21,7 @@ const Gallery = ({ images, colWidth }) => {
       const privateKey = photoIndex;
       return (
         <MDBCol md={colWidth[index]} key={photoIndex}>
-          <figure className={styles.figBox}>
+          <figure className="fig-box">
             <img
               src={imageSrc}
               srcset={genSrcSet(imageSrc)}

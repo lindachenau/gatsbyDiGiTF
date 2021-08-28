@@ -5,10 +5,13 @@ import Carousel from '../components/carousel'
 import Features from '../components/features'
 import Card from '../components/card'
 import { MDBRow } from 'mdbreact'
+import img1 from "../images/wireframe.jpeg"
+import img2 from "../images/integration.jpeg"
+import img3 from "../images/design.jpeg"
 
 const imgList = [
   {
-    name: require("../images/wireframe.jpeg"),
+    name: img1,
     key: "1",
     alt: "First slide",
     title: "Web app development",
@@ -16,7 +19,7 @@ const imgList = [
     link: "/services/progressive-web-apps"
   },
   {
-    name: require("../images/integration.jpeg"),
+    name: img2,
     key: "2",
     alt: "Second slide",
     title: "Business SW integration",
@@ -24,7 +27,7 @@ const imgList = [
     link: "/services/business-sw-integration"
   },
   {
-    name: require("../images/design.jpeg"),
+    name: img3,
     key: "3",
     alt: "Third slide",
     title: "Custom UX/UI design",

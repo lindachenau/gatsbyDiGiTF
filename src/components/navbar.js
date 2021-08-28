@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import {
   MDBContainer, MDBNavbar, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, 
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon
@@ -6,8 +6,8 @@ import {
 import { Link, navigate } from 'gatsby'
 import CustomNavLink from './custom-link'
 import Logo from "../../static/DiGiTF_128.png"
-import styles from  './navbar.module.scss'
 import './navbar.css'
+import {dropdownMenu, dropdownItem} from  './navbar.module.scss'
 import { isLoggedIn, isAdmin, logout } from './app-user'
 // import GDriveInit from './gdrive-ini'
 
@@ -52,10 +52,10 @@ const Navbar = () => {
                 <MDBDropdownToggle nav caret>
                   <span className="mr-2">Gallery</span>
                 </MDBDropdownToggle>
-                <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
-                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/photos")}>Photos</MDBDropdownItem>
-                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/digital-art")}>Digital art</MDBDropdownItem>
-                  <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/watercolour")}>Watercolour</MDBDropdownItem>
+                <MDBDropdownMenu className={`dropdown-default ${dropdownMenu}`}>
+                  <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/photos")}>Photos</MDBDropdownItem>
+                  <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/digital-art")}>Digital art</MDBDropdownItem>
+                  <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/watercolour")}>Watercolour</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
@@ -65,26 +65,26 @@ const Navbar = () => {
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
                   {isLoggedIn() ?
-                    <MDBIcon icon="user-check" />
+                    <span className="mr-2">Hello</span>
                     :
                     <MDBIcon icon="user-lock" />
                   }
                 </MDBDropdownToggle>
-                <MDBDropdownMenu className={`dropdown-default ${styles.dropdownMenu}`}>
+                <MDBDropdownMenu className={`dropdown-default ${dropdownMenu}`}>
                   {isLoggedIn() ? 
                     <>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/app/subscription")}>Subscription</MDBDropdownItem>
+                      <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/app/subscription")}>Subscription</MDBDropdownItem>
                       {isAdmin() ? 
-                        <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/app/publishing")}>Publishing</MDBDropdownItem>
+                        <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/app/publishing")}>Publishing</MDBDropdownItem>
                         :
                         null
                       }
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => signout()}>Sign out</MDBDropdownItem>
+                      <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => signout()}>Sign out</MDBDropdownItem>
                     </> 
                     :
                     <>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/signin")}>Sign in</MDBDropdownItem>
-                      <MDBDropdownItem className={`white-text nav-link ${styles.dropdownItem}`} onClick={() => navigate("/signup")}>Create account</MDBDropdownItem>
+                      <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/signin")}>Sign in</MDBDropdownItem>
+                      <MDBDropdownItem className={`white-text nav-link ${dropdownItem}`} onClick={() => navigate("/signup")}>Create account</MDBDropdownItem>
                     </>
                   }
                 </MDBDropdownMenu>

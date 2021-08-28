@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { MDBContainer } from "mdbreact"
 import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"
-import styles from  './gallery.module.scss'
+import './gallery.css'
 import { makeStyles } from '@material-ui/core/styles'
 import GridList from '@material-ui/core/GridList'
 import GridListTile from '@material-ui/core/GridListTile'
@@ -46,7 +46,7 @@ const Gallery2 = ({ images }) => {
               setPhotoIndex(privateKey)
               setIsOpen(true)
             }}
-            className={styles.imgBox}
+            className="img-box"
           />
         </GridListTile>
       )

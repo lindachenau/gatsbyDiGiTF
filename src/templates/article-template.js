@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Content from '../components/content'
 
-export default ({ data }) => {
+const ArticleTemplate = ({ data }) => {
   const article = data.markdownRemark
 
   return (
@@ -20,6 +20,8 @@ export default ({ data }) => {
     </Content>
   )
 }
+
+export default ArticleTemplate
 
 export const query = graphql`
   query($slug: String!) {
