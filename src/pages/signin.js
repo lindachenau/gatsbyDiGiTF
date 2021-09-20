@@ -65,7 +65,7 @@ class SignIn extends React.Component {
           autoComplete="on"
         />
         <p className="text-center">
-          Forgot your password? <Link to="/reset">Reset password</Link>
+          Forgot your password? <Link to="/reset-password">Reset password</Link>
         </p>
         <button
           onClick={e => this.login(e)}

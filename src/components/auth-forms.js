@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '@material-ui/core/Container'
+import Button from '@material-ui/core/Button'
 
 export function AuthForm({ children, title, error }) {
   return (
@@ -50,15 +51,15 @@ export function Password({ handleUpdate, password, autoComplete }) {
   )
 }
 
-export function ConfirmationCode({ handleUpdate, auth_code, autoComplete }) {
+export function ConfirmationCode({ handleUpdate, authCode, autoComplete }) {
   return (
     <div className="form-group">
       <label htmlFor="enterCode">Confirmation Code</label>
       <input
         onChange={handleUpdate}
         autoComplete={autoComplete}
-        name="auth_code"
-        value={auth_code}
+        name="authCode"
+        value={authCode}
         type="text"
         className="form-control"
         placeholder="######"
@@ -67,3 +68,26 @@ export function ConfirmationCode({ handleUpdate, auth_code, autoComplete }) {
     </div>
   )
 }
+
+export function CustomAction({ padding, question, action, cb, disabled=false }) {
+  return (
+    <div
+      style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      paddingTop: padding,
+      paddingBottom: padding
+    }}
+    >
+      <p style={{ marginTop: 10, marginBottom: 10 }}>{question}</p>
+      <Button
+        color="primary"
+        onClick={cb}
+        disabled={disabled}
+      >
+        {action}
+      </Button>
+  </div>
+  )
+}      
