@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from '@material-ui/styles'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme}  from '@material-ui/core/styles'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import "./layout.css"
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       // MDBReact $primary-color: #4285f4
