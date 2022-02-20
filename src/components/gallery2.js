@@ -18,7 +18,11 @@ const Gallery2 = ({ images }) => {
       justifyContent: 'space-between',
       overflow: 'hidden',
       backgroundColor: theme.palette.background.paper,
-    }
+    },
+    imgSIze : {
+      maxWidth: "100vw",
+      height: "auto"
+     }
   }))
   
   const classes = useStyles()
@@ -46,7 +50,7 @@ const Gallery2 = ({ images }) => {
               setPhotoIndex(privateKey)
               setIsOpen(true)
             }}
-            className="img-box"
+            className={classes.imgSize}
           />
         </GridListTile>
       )
