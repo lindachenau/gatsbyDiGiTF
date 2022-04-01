@@ -36,8 +36,8 @@ module.exports = {
         name: `DiGi Transform`,
         short_name: `DiGiTF`,
         start_url: `/`,
-        background_color: `#4B5EB8`,
-        theme_color: `#68008C`,
+        background_color: `#FFFFFF`,
+        theme_color: `#060e39`,
         display: `standalone`,
         icon: `${__dirname}/static/DiGiTF_128.png`, // This path is relative to the root of the site.
       },
